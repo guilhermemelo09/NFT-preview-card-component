@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="x-UA-Compatible" content="IE-edge" />
+        <meat name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Grid CSS</title>
+        <style>
+            /*.container{
+                background-color:#333;
+                border: 5px solid red;
+                padding:15px;
+                display:grid;/*grid no elemento pai*/
+                /*grid-template-columns:50px auto 10%;/*aqui eu defino minhas colunas. Controle do eitxo x*/
+                /*grid-template-rows:70% 30% ;/*aqui eu manipulo as linhas. Controle do eixo Y*/
+                /*gap: 2px;/*espaço entre as colunas e linhas, esse é o modelo geral que padroniza*/
+                /*grid-row-gap:10px;/*espaçamento entre as linhas*/
+                /*grid-column-gap:15px;/*espacamento entre as colunas*/
+            
+            /*}*/ 
+
+            /*Trabalhando com template Grid*/
+            /*.container div{
+                background-color: #ccc;
+                padding:20px;
+                border:1px solid blue;
+                border-radius:10px;
+            }
+
+            .container{
+                background-color:rgb(7, 7, 33);
+                border:3px solid red;
+                border-radius:20px;
+                padding:15px;
+                display:grid;
+                gap:5px;
+                grid-template-areas: /*define os tamanhos das areas e o seu layout*/
+                /*'header header header header'/*cada header ocupa 25% do espaço*/
+                /*'sidebar content content content'/*25% para o sidebar e 75% para o content*/
+                /*'footer footer footer footer';/*footer ocupa 100% do espaço*/
+            /*}
+
+            #header{
+                grid-area:header;
+            }
+            #sidebar{
+                grid-area:sidebar;
+                height:50vh;
+            }
+            #content{
+                grid-area:content;
+                height:50vh
+            }
+            #footer{
+                grid-area:footer;
+            }*/
+
+            /*Trabalhando com alinhamento no GRID*/
+            #container-alinhamento div{
+                background-color: #ccc;
+                padding:20px;
+                border:1px solid blue;
+                border-radius:10px;
+            }
+            #container-alinhamento{
+                background-color:rgb(7, 7, 33);
+                border:3px solid red;
+                border-radius:20px;
+                padding:15px;
+                display:none;
+                grid-template-columns:auto auto auto;
+                height:40vh;
+                justify-content: center;/*alinhamento no eixo horizontal*/
+                align-items:center;/*alinhamento no eixo vertical*/
+                margin-bottom:50px;
+            }
+
+            /*Trabalhando com alinhamento no GRID*/
+            #container-itens div{
+                background-color: #ccc;
+                padding:20px;
+                border:1px solid blue;
+                border-radius:10px;
+            }
+            #container-itens{
+                background-color:rgb(7, 7, 33);
+                border:3px solid red;
+                border-radius:20px;
+                padding:15px;
+                display:grid;
+                grid-template-columns: auto auto auto;/*crio 3 colunas*/
+            }
+            #item1{
+                grid-column-start:1;/*começa na coluna 1*/
+                grid-column-end:4;/*vai terminar na coluna 4*/
+                /*esse configuração acima vai deixar o item1 ocupar toda a primeira linha*/
+            }
+
+            #item2{
+                grid-row-start:2;
+                grid-row-end:4;
+                /*configurar a disposição do item nas rows/linhas*/
+            }
+            #item3{
+                justify-self:end;/*se posicionar na horizontal. Posicionamento individual*/
+                height:200px;
+            }
+            #item5{
+                justify-self: start;
+                height:200px;
+            }
+            #item4{
+                align-self:center;/*posicionamento individual na vertical*/
+            }
+            #item6{
+                align-self:end;
+            }
+        </style>
+        
+    </head>
+    <body>
+        <!--Grid início -->
+        <!--<div class="container">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+        </div>-->
+
+        <!--Trabalhando com template Area-->
+        <!--
+        <div class="container" id="template-areas">
+            <div id="header">
+                <p>Cabeçalho</p>
+            </div>
+            <div id="sidebar">
+                <p>Sidebar</p>
+            </div>
+            <div id="content">
+                <p>Conteúdo</p>
+            </div>
+            <div id="footer">
+                <p>Rodapé</p>
+            </div>
+        </div>-->
+
+        <!--Trabalhando com alinhamento-->
+        <div class="container" id="container-alinhamento">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+        </div>
+
+        <!--Trabalhando com itens individuais-->
+        <div class="container" id="container-itens">
+            <div id='item1'>1</div>
+            <div id='item2'>2</div>
+            <div id='item3'>3</div>
+            <div id='item4'>4</div>
+            <div id='item5'>5</div>
+            <div id='item6'>6</div>
+        </div>
+    </body>
+</html>
